@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: boot-mqtt
+  mqtt:
+    username: admin
+    password: public
+    url: tcp://broker.emqx.io:1883
+    deault:
+      topic: my-topic-server
+    client:
+      id: clientId-demo
+    consumer:
+      clientId: web-server-client
+      deaultTopic: mqtt_topic
+    topic:
+      task:
+        update: mqtt_topic_state
+
+
